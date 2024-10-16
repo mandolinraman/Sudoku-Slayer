@@ -1,6 +1,6 @@
 import csv
 from sudoku import Sudoku
-from sudoku_draw import draw
+from draw_sudoku import draw
 
 # csv_file = "hard_puzzles.csv"
 csv_file = "medium_puzzles.csv"

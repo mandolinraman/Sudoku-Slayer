@@ -1,5 +1,5 @@
 from sudoku import Sudoku
-from sudoku_draw import draw
+from draw_sudoku import draw
 
 puzzle = [
     [0, 0, 6, 1, 0, 0, 0, 0, 8],
@@ -48,8 +48,8 @@ for i, str_puz in enumerate(str_puzzles):
     Sx = Sudoku(str_puz)
     Sx.solve()
     if Sx.solved:
-        print("  -> Solved")
+        print("  -> 😊 Solved")
     else:
-        print("  -> Failed to solve")
+        print("  -> 😡 Failed")
     print("Drawing output...")
     draw(Sx, f"puzzle{i}.pdf")
